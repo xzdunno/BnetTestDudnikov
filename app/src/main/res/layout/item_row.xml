@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:background="@drawable/list_items_row_card">
+<ImageView
+    android:layout_width="183dp"
+    android:layout_height="117dp"
+    android:id="@+id/drugRecImg"
+    android:layout_gravity="center_horizontal"
+    android:layout_margin="12dp"
+    ></ImageView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/recTitleTxt"
+        android:textSize="22sp"
+        android:fontFamily="@font/roboto_bold"
+        android:layout_gravity="start"
+        android:layout_margin="12dp"
+        android:textColor="@color/black"
+        > </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:id="@+id/recDescriptionTxt"
+        android:layout_margin="12dp"
+        android:layout_gravity="start"
+        android:fontFamily="@font/roboto_regular"
+        android:textColor="@color/description_color"
+        android:lines="5"
+        android:ellipsize="end"
+        android:textAllCaps="false"
+        ></TextView>
+</LinearLayout>

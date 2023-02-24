@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.BnetTestDudnikov" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/theme_green</item>
+        <item name="colorPrimaryVariant">@color/theme_green</item>
+        <item name="colorOnPrimary">@color/theme_green</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/theme_green</item>
+        <item name="colorSecondaryVariant">@color/theme_green</item>
+        <item name="colorOnSecondary">@color/theme_green</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>

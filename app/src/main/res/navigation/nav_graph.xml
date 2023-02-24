@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/listItemsFragment">
+
+    <fragment
+        android:id="@+id/listItemsFragment"
+        android:name="com.example.bnettestdudnikov.presentation.fragments.ListItemsFragment"
+        android:label="fragment_list_items"
+        tools:layout="@layout/fragment_list_items" >
+        <action
+            android:id="@+id/action_listItemsFragment_to_drugCardFragment"
+            app:destination="@id/drugCardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/drugCardFragment"
+        android:name="com.example.bnettestdudnikov.presentation.fragments.DrugCardFragment"
+        android:label="fragment_drug_card"
+        tools:layout="@layout/fragment_drug_card" />
+</navigation>

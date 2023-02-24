@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">BnetTestDudnikov</string>
+    <string name="categories">Категории</string>
+    <string name="list">Список</string>
+    <string name="buy">ГДЕ КУПИТЬ</string>
+</resources>
