@@ -45,10 +45,6 @@ class ListItemsFragment : Fragment() {
         return bind.root
     }
 
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
-        // TODO: Use the ViewModel
-    }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -59,6 +55,9 @@ class ListItemsFragment : Fragment() {
                     bind.searchButton.visibility = View.VISIBLE
                 } else {
                     bind.searchButton.visibility = View.GONE
+                    bind.searchView.text.clear()
+                    bind.searchView.visibility = View.GONE
+                    bind.closeButton.visibility = View.GONE
                     Toast.makeText(
                         requireContext(),
                         "Отсутствует интернет соединение.",
@@ -103,14 +102,4 @@ class ListItemsFragment : Fragment() {
         }
     }
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-
-    }
-
-    override fun onDestroyView() {
-        super.onDestroyView()
-
-    }
 }

@@ -17,7 +17,6 @@ class ListItemsViewModel @Inject constructor(
     private val repository: Repository,
     private val listenNetwork: ListenNetwork
 ) : ViewModel() {
-    var itemData: MutableLiveData<Drug> = MutableLiveData()
     var listData: MutableLiveData<List<Drug>> = MutableLiveData()
     var searchData: MutableLiveData<List<Drug>> = MutableLiveData()
     val isConnected: Flow<Boolean> = listenNetwork.isConnected
